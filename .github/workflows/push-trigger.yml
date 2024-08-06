@@ -69,7 +69,7 @@ jobs:
 
     - name: Setup branch and env
       run: |
-          # Strip git ref prefix from version
+          # # Strip git ref prefix from version
           echo "BRANCH_NAME=$(echo ${{ github.ref }} | sed -e 's,.*/\(.*\),\1,')" >> $GITHUB_ENV
 
     - name: Log into registry
